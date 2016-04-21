@@ -1,0 +1,30 @@
+{
+  "name": "kata",
+  "version": "1.0.0",
+  "description": "code kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jervenclark@github.com/jervenclark/kata.git"
+  },
+  "keywords": [
+    "programming",
+    "code",
+    "kata"
+  ],
+  "author": "Jerven Clark Chua <jervenclark@gmail.com> (http://jervenclarkchua.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jervenclark/kata/issues"
+  },
+  "homepage": "https://github.com/jervenclark/kata#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^2.2.0",
+    "gulpish": "^0.1.2"
+  }
+}
