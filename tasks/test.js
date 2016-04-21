@@ -9,12 +9,6 @@ module.exports = function(gulp, config, plugins) {
     deps: deps.map((dep) => {
       return dep.split('-').join(':').split('.js')[0];
     }),
-    fn: function() {
-      return gulp
-        .src('test/**/*.spec.js', {
-          read: false
-        })
-        .pipe(plugins.mocha());
-    }
+    fn: function() {}
   };
 };
