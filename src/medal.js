@@ -40,4 +40,33 @@
  *
  */
 
-module.exports = function medal(user_time, gold, silver, bronze) {}
+module.exports = medal;
+
+function medal(user_time, gold, silver, bronze) {
+
+  let multiplier = [
+    3600,
+    60,
+    1
+  ], medals = [
+    'Gold',
+    'Silver',
+    'Bronze',
+    'None'
+  ], index;
+
+  let values = Object.keys(arguments).map((ind) => {
+    return arguments[ind]
+      .split(':')
+      .map((x, i) => x * multiplier[i])
+      .reduce((a, b) => a + b);
+  });
+
+  for(let i = 1; i < 5; i++){
+    index = i-1;
+    if(values[0] < values[i]) break;
+  }
+
+  return medals[index];
+
+}
