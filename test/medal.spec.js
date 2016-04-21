@@ -49,7 +49,7 @@ describe('Medal', function() {
       .equal('Bronze');
   });
 
-  it('should solve to "Golf"', function() {
+  it('should solve to "Gold"', function() {
     medal(
         '00:00:01',
         '00:00:02',
@@ -57,7 +57,7 @@ describe('Medal', function() {
         '00:00:04'
       )
       .should
-      .equal('Golf');
+      .equal('Gold');
   });
 
   it('should solve to "None"', function() {
